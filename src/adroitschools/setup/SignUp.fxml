@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="sIgnUpAnchorPane" prefHeight="287.0" prefWidth="507.0" style="-fx-background-color: #FFFFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="adroitschools.setup.SignUpController">
+   <children>
+      <JFXTextField alignment="CENTER" layoutX="105.0" layoutY="44.0" prefHeight="25.0" prefWidth="284.0" promptText="Email-Address" />
+      <JFXTextField alignment="CENTER" layoutX="105.0" layoutY="86.0" prefHeight="25.0" prefWidth="284.0" promptText="User-Name" />
+      <JFXPasswordField alignment="CENTER" layoutX="101.0" layoutY="129.0" prefHeight="25.0" prefWidth="291.0" promptText="Enter - Password" />
+      <JFXPasswordField alignment="CENTER" layoutX="102.0" layoutY="174.0" prefHeight="25.0" prefWidth="291.0" promptText="Confirm - Password" />
+      <JFXButton fx:id="saveRecord" layoutX="184.0" layoutY="224.0" onAction="#backToLogin" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #3F51B5; -fx-background-radius: 45;" text="Save &amp; Login" />
+   </children>
+</AnchorPane>

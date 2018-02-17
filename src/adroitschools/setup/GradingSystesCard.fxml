@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <TabPane prefHeight="111.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Home">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="New">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Edit">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Delete">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <JFXButton contentDisplay="TOP" text="Grades">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SPELLCHECK" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <TextField id="search" fx:id="search" alignment="CENTER" prefHeight="25.0" prefWidth="263.0" promptText="search" style="-fx-background-radius: 45;">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="25.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Action">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="Grades">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SPELLCHECK" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </top>
+         <center>
+            <SplitPane dividerPositions="0.8525641025641025" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Accordion prefHeight="377.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <panes>
+                            <TitledPane alignment="CENTER_RIGHT" animated="false" text="General">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </TitledPane>
+                            <TitledPane alignment="CENTER_RIGHT" animated="false" text="Audit Trail">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <HBox layoutX="57.0" layoutY="40.0" prefHeight="301.0" prefWidth="660.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="70.0" text="Created By:">
+                                                   <HBox.margin>
+                                                      <Insets left="25.0" top="25.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField editable="false" prefHeight="25.0" prefWidth="247.0" promptText="Create By" style="-fx-background-radius: 45;">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" top="25.0" />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </TextField>
+                                                <Label prefHeight="17.0" prefWidth="84.0" text="Creation Date:">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" top="25.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField editable="false" prefHeight="25.0" prefWidth="194.0" promptText="Create By" style="-fx-background-radius: 45;">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" top="25.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                       </children></AnchorPane>
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+              </items>
+            </SplitPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="25.0" prefWidth="782.0" style="-fx-background-color: #3F51B5;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+/*
+ * Empty Stylesheet file.
+ */
+.mainFxmlClass {
+   .button:hover{
+	-fx-background-color:black;
+	-fx-text-fill:white;
+}
+.glyph-icon{
+	-fx-fill:black;
+        -fx-text-fill:white
+        
+}
+
+.button:hover .glyph-icon{
+	-fx-fill:white;
+        
+}
+
+}
+.button:hover{
+	-fx-background-color:black;
+	-fx-text-fill:white;
+/*        -fx-scale-x: 1.5;
+        -fx-scale-y: 1.5;
+        -fx-scale-z: 1.5;*/
+}

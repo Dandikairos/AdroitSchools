@@ -1,0 +1,52 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+   .button:hover{
+	-fx-background-color:black;
+	-fx-text-fill:white;
+}
+.glyph-icon{
+	-fx-fill:black;
+        -fx-text-fill:white
+        
+}
+
+.button:hover .glyph-icon{
+	-fx-fill:white;
+        
+}
+
+}
+.button:hover{
+	-fx-background-color:black;
+	-fx-text-fill:white;
+/*        -fx-scale-x: 1.5;
+        -fx-scale-y: 1.5;
+        -fx-scale-z: 1.5;*/
+}
+.glyph-icon{
+	-fx-fill:black;
+        -fx-text-fill:white
+        
+}
+.button:hover .glyph-icon{
+	-fx-fill:white;
+}
+.toolbarButton {
+    -fx-font-family: 'FontAwesome';
+    -fx-font-size: 1.1em;
+    -fx-padding: 3 5 1 5;
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+    -fx-text-fill: ladder(-fx-background, white 49%, black 50%);
+    -fx-graphic-text-gap: 0;
+}
+
+.toolbarButton:hover {
+    -fx-border-color: -fx-text-fill;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ProgrameStructureCardAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#exitCard" prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adroitschools.setup.ProgrameStructureCardController">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <TabPane prefHeight="111.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="New">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Edit">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Delete">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="81.0" text="Promote Students">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SORT" size="45" wrappingWidth="108.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="96.0" text="Schedule">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SNOOZE" size="45" wrappingWidth="63.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Class Students">
+                                       <graphic>
+                                          <MaterialIconView glyphName="GROUP" size="45" wrappingWidth="86.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Class List">
+                                       <graphic>
+                                          <MaterialIconView glyphName="LIST" size="45" wrappingWidth="86.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <TextField id="search" fx:id="search" alignment="CENTER" prefHeight="25.0" prefWidth="263.0" promptText="search" style="-fx-background-radius: 45;">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="25.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Navigate">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="Promote Students">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SORT" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Schedule">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SNOOZE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Class Students">
+                                       <graphic>
+                                          <MaterialIconView glyphName="GROUP" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Activate Class">
+                                       <graphic>
+                                          <MaterialIconView glyphName="PLAY_CIRCLE_OUTLINE" size="45" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Set In Recess">
+                                       <graphic>
+                                          <MaterialIconView glyphName="PAUSE" size="45" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Report">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="Class List">
+                                       <graphic>
+                                          <MaterialIconView glyphName="LIST" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </top>
+         <center>
+            <SplitPane dividerPositions="0.8525641025641025" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Accordion prefHeight="377.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <panes>
+                            <TitledPane alignment="CENTER_RIGHT" animated="false" text="General">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </TitledPane>
+                            <TitledPane alignment="CENTER_RIGHT" animated="false" text="Audit Trail">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane hgap="2.0" layoutX="24.0" layoutY="33.0" prefHeight="301.0" prefWidth="660.0" vgap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="99.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.99999237060547" minWidth="10.0" prefWidth="235.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="97.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="183.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="63.0" minHeight="2.9999985694885254" prefHeight="2.9999985694885254" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="133.00000143051147" minHeight="10.0" prefHeight="16.00000762939453" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="172.99999237060547" minHeight="7.000007629394531" prefHeight="7.000007629394531" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="211.99999237060547" minHeight="10.0" prefHeight="211.99999237060547" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label prefHeight="36.0" prefWidth="139.0" text="Create By:" />
+                                                <Label text="Creation Date:" GridPane.columnIndex="2" />
+                                                <Label text="Last Modifies By:" GridPane.rowIndex="1" />
+                                                <Label text="Lst Modified Date:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <TextField editable="false" GridPane.columnIndex="1" />
+                                                <TextField editable="false" GridPane.columnIndex="3" />
+                                                <TextField editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </padding>
+                                          </GridPane>
+                                       </children></AnchorPane>
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+              </items>
+            </SplitPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="25.0" prefWidth="782.0" style="-fx-background-color: #3F51B5;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

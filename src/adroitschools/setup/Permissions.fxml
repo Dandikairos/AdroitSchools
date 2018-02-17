@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adroitschools.setup.PermissionsController">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <SplitPane dividerPositions="0.9807692307692307" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView prefHeight="352.0" prefWidth="662.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn prefWidth="71.0" text="Code" />
+                              <TableColumn prefWidth="90.0" text="Description" />
+                              <TableColumn prefWidth="93.0" text="Committe App" />
+                              <TableColumn prefWidth="99.0" text="Admitt Student" />
+                              <TableColumn prefWidth="97.0" text="Reject Applicant" />
+                              <TableColumn prefWidth="99.0" text="Register Student" />
+                              <TableColumn prefWidth="134.0" text="Change Student Setup" />
+                              <TableColumn prefWidth="134.0" text="Modify Admitted Student" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+               </items>
+            </SplitPane>
+         </center>
+         <top>
+            <TabPane prefHeight="111.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton fx:id="newPermission" alignment="CENTER" contentDisplay="TOP" onAction="#createNewPermission" text="New">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Edit">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Delete">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Copy from Another">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SHARE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <TextField prefHeight="25.0" prefWidth="230.0" style="-fx-background-radius: 45;" />
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Actions">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Copy From Another">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SHARE" size="45" textAlignment="CENTER" wrappingWidth="112.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

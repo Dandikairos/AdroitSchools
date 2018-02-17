@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="programmeLevelsAndPeriods" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adroitschools.setup.ProgrameLevelsAndPeriodsController">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <TabPane prefHeight="111.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Home">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton fx:id="newClass" contentDisplay="TOP" onAction="#createNewStudyLevel" text="New">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Edit">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Delete">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="81.0" text="Courses">
+                                       <graphic>
+                                          <MaterialIconView glyphName="PICTURE_AS_PDF" size="45" textAlignment="CENTER" wrappingWidth="108.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="awards" contentDisplay="TOP" onAction="#gotoAwards" prefHeight="74.0" prefWidth="96.0" text="Awards">
+                                       <graphic>
+                                          <MaterialIconView glyphName="CARD_GIFTCARD" size="45" textAlignment="CENTER" wrappingWidth="63.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Class Students">
+                                       <graphic>
+                                          <MaterialIconView glyphName="GROUP_WORK" size="45" textAlignment="CENTER" wrappingWidth="86.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Previous">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SKIP_PREVIOUS" size="45" textAlignment="CENTER" wrappingWidth="86.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Next" textAlignment="CENTER">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SKIP_NEXT" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <TextField id="search" fx:id="search" alignment="CENTER" prefHeight="25.0" prefWidth="263.0" promptText="search" style="-fx-background-radius: 45;">
+                                       <HBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="25.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Navigate">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="Button">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Edit">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Delete">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Courses">
+                                       <graphic>
+                                          <MaterialIconView glyphName="PICTURE_AS_PDF" size="45" textAlignment="CENTER" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Awards">
+                                       <graphic>
+                                          <MaterialIconView glyphName="CARD_GIFTCARD" size="45" textAlignment="CENTER" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Class Students">
+                                       <graphic>
+                                          <MaterialIconView glyphName="GROUP_WORK" size="45" textAlignment="CENTER" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Previous">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SKIP_PREVIOUS" size="45" textAlignment="CENTER" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Next">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SKIP_NEXT" size="45" textAlignment="CENTER" wrappingWidth="77.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </top>
+         <center>
+            <SplitPane dividerPositions="0.9" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TreeTableView layoutX="150.0" layoutY="29.0" prefHeight="377.0" prefWidth="699.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TreeTableColumn prefWidth="75.0" text="Type" />
+                            <TreeTableColumn prefWidth="75.0" text="Code" />
+                              <TreeTableColumn prefWidth="75.0" text="Name" />
+                              <TreeTableColumn prefWidth="75.0" text="Parent" />
+                              <TreeTableColumn prefWidth="75.0" text="Allow Credit Transfer" />
+                              <TreeTableColumn prefWidth="75.0" text="Min Promotion Credit" />
+                              <TreeTableColumn prefWidth="75.0" text="PromotionCourses Pending" />
+                              <TreeTableColumn prefWidth="75.0" text="Max Supplemently Courses" />
+                              <TreeTableColumn prefWidth="75.0" text="PromotionCourses Pending" />
+                              <TreeTableColumn prefWidth="75.0" text="Max Retake Courses" />
+                          </columns>
+                        </TreeTableView>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+              </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

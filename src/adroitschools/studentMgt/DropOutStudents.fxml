@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <SplitPane dividerPositions="0.9487179487179487" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView prefHeight="352.0" prefWidth="662.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="No." />
+                              <TableColumn prefWidth="103.0" text="Name" />
+                              <TableColumn prefWidth="56.0" text="Program" />
+                              <TableColumn prefWidth="79.0" text="Current Class" />
+                              <TableColumn prefWidth="66.0" text="Phone No." />
+                              <TableColumn prefWidth="57.0" text="Sponsor" />
+                              <TableColumn prefWidth="98.0" text="Passport/ID No." />
+                              <TableColumn prefWidth="45.0" text="Gender" />
+                              <TableColumn prefWidth="69.0" text="Nationality" />
+                              <TableColumn prefWidth="88.0" text="Student Status" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+               </items>
+            </SplitPane>
+         </center>
+         <top>
+            <TabPane prefHeight="111.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="New">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Edit">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Delete">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic></JFXButton>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Expel">
+                                       <graphic>
+                                          <MaterialIconView glyphName="TRENDING_UP" size="45" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Suspend">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ALARM_OFF" size="45" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Student Suspension">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DIRECTIONS_WALK" size="45" textAlignment="CENTER" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Student Defferement">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DIRECTIONS_WALK" size="45" textAlignment="CENTER" />
+                                       </graphic></JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <TextField alignment="CENTER" prefHeight="25.0" prefWidth="162.0" promptText="Search" style="-fx-background-radius: 45;">
+                                       <opaqueInsets>
+                                          <Insets top="15.0" />
+                                       </opaqueInsets>
+                                    </TextField>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Fresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic></JFXButton>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Navigate">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" text="Expel">
+                                       <graphic>
+                                          <MaterialIconView glyphName="TRENDING_UP" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Suspend">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ALARM_OFF" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" text="Student Deferrement">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DIRECTIONS_WALK" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" prefHeight="74.0" prefWidth="85.0" text="Student Suspendions">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DIRECTIONS_WALK" size="45" textAlignment="CENTER" wrappingWidth="118.0" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

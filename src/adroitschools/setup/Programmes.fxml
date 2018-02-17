@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="programmeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" styleClass="mainFxmlClass" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adroitschools.setup.ProgrammesController">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <SplitPane dividerPositions="0.9" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="programmesTable" prefHeight="352.0" prefWidth="662.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Code" />
+                              <TableColumn prefWidth="75.0" text="Name" />
+                              <TableColumn prefWidth="75.0" text="Numbering" />
+                              <TableColumn prefWidth="75.0" text="Levels" />
+                              <TableColumn prefWidth="75.0" text="Grading System" />
+                              <TableColumn prefWidth="75.0" text="Supplementary Exams" />
+                              <TableColumn prefWidth="75.0" text="Retakes Include Assements" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+               </items>
+            </SplitPane>
+         </center>
+         <top>
+            <TabPane prefHeight="111.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="14.0" layoutY="-9.0" prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton fx:id="newPrograme" alignment="CENTER" contentDisplay="TOP" onAction="#gotoProgrameCard" text="New" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ADD" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Edit" textAlignment="CENTER">
+                                       <graphic>
+                                          <MaterialIconView glyphName="EDIT" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Delete" textAlignment="CENTER">
+                                       <graphic>
+                                          <MaterialIconView glyphName="DELETE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="studyLevelAndPaeriod" alignment="CENTER" contentDisplay="TOP" onAction="#gotoStudyLevelAndPeriod" text="Study Levels &amp; Periods" textAlignment="CENTER">
+                                       <graphic>
+                                          <MaterialIconView glyphName="TRENDING_UP" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="schedule" alignment="CENTER" contentDisplay="TOP" onAction="#gotoSchedule" text="Schudules">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SNOOZE" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="classes" alignment="CENTER" contentDisplay="TOP" onAction="#gotoClasses" text="Classes">
+                                       <graphic>
+                                          <MaterialIconView glyphName="LOCAL_LIBRARY" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="programmeStructure" alignment="CENTER" contentDisplay="TOP" onAction="#gotoProgrammesStructure" text="Programm Structure">
+                                       <graphic>
+                                          <MaterialIconView glyphName="WIDGETS" size="45" />
+                                       </graphic></JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <TextField prefHeight="25.0" prefWidth="184.0" style="-fx-background-radius: 45;" />
+                                    <JFXButton alignment="CENTER" contentDisplay="TOP" text="Refresh" textAlignment="CENTER">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" textAlignment="CENTER" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Navigate">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="119.0" prefWidth="782.0">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <JFXButton contentDisplay="TOP" onAction="#gotoStudyLevelAndPeriod" text="Study Levels &amp; Periods">
+                                       <graphic>
+                                          <MaterialIconView glyphName="TRENDING_UP" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" onAction="#gotoSchedule" text="Schedule">
+                                       <graphic>
+                                          <MaterialIconView glyphName="SNOOZE" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" onAction="#gotoClasses" text="Classes">
+                                       <graphic>
+                                          <MaterialIconView glyphName="LOCAL_LIBRARY" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton contentDisplay="TOP" onAction="#gotoProgrammesStructure" prefHeight="74.0" prefWidth="85.0" text="Programe Structure">
+                                       <graphic>
+                                          <MaterialIconView glyphName="WIDGETS" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <JFXButton contentDisplay="TOP" text="Refresh">
+                                       <graphic>
+                                          <MaterialIconView glyphName="REFRESH" size="45" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

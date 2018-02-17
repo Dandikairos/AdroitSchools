@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.scene.effect.*?>
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import javafx.scene.control.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loginAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="499.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adroitschools.AdroitSchLoginController">
+   <children>
+      <JFXTextField fx:id="userName" alignment="CENTER" layoutX="112.0" layoutY="165.0" prefHeight="25.0" prefWidth="274.0" promptText="User-Name" />
+      <JFXPasswordField id="passWord" fx:id="password" alignment="CENTER" layoutX="117.0" layoutY="213.0" prefHeight="25.0" prefWidth="274.0" promptText="Password" />
+      <JFXButton id="login" fx:id="login" layoutX="187.0" layoutY="248.0" onAction="#login" prefHeight="25.0" prefWidth="135.0" style="-fx-background-radius: 45; -fx-background-color: #3F51B5;" text="Login" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect></JFXButton>
+      <Hyperlink id="signUp" fx:id="signup" layoutX="448.0" layoutY="3.0" onAction="#onSignUp" text="Sign-up" />
+      <Label layoutX="179.0" layoutY="15.0" prefHeight="115.0" prefWidth="145.0">
+         <graphic>
+            <MaterialDesignIconView glyphName="ACCOUNT_CIRCLE" size="150" wrappingWidth="150.0" />
+         </graphic></Label>
+      <Label layoutX="84.0" layoutY="230.0">
+         <graphic>
+            <MaterialIconView glyphName="VPN_KEY" size="20" />
+         </graphic>
+      </Label>
+      <Label layoutX="80.0" layoutY="182.0" />
+      <MaterialIconView glyphName="PERM_IDENTITY" layoutX="84.0" layoutY="200.0" size="20" />
+   </children>
+</AnchorPane>
